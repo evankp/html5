@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i');
+
+:root {
+    --light-grey: #f1f1f1;
+    --neon-green: #81D742;
+}
 
 body {
     font-size: 14px;
@@ -7,12 +12,35 @@ body {
 }
 
 h1 {
-    font-weight: 700;
-    font-size: 2rem;
+    font-weight: 600;
+    font-size: 2.5rem;
     margin: 0;
     padding: 0;
 }
 
+h2 {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.container {
+    padding: 20px;
+    background-color: white;
+    height: 100vh;
+    position: relative;
+}
+
 .header-lines {
-    width: 33.3%;
+    width: 20%;
+    height: 3px;
+    color: var(--light-grey);
+    background-color: var(--light-grey);
+    border: none;
+
+}
+
+#logo {
+    --logo-sze: 80px;
+    height: var(--logo-sze);
+    width: var(--logo-sze);
 }

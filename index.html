@@ -6,19 +6,36 @@
     <!--[if lt IE 9]>
     <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv.js"></script>
     <![endif]-->
+    <link rel="icon" type="image/svg" href="./img/personal_logo.svg">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/base.css">
+
+    <style>
+        #menu-icon {
+            font-size: 2.5em;
+            color: var(--neon-green);
+            position: absolute;
+            right: 0;
+        }
+    </style>
 
 </head>
 <body>
     <div class="container">
-        <div class="d-flex flex-md-row flex-sm-column justify-content-center align-content-center">
-            <hr class="header-lines">
-            <a class=""><img src="./img/personal_logo.svg" alt="ek logo"></a>
-            <hr class="header-lines">
-        </div>
+        <nav class="d-flex flex-row align-items-center mb-5">
+            <hr class="header-lines mr-5">
+            <a href="index.html"><img id="logo" src="./img/personal_logo.svg" alt="ek logo"></a>
+            <hr class="header-lines ml-5">
+            <i id="menu-icon" class="fas fa-bars mr-5" ></i>
+        </nav>
+
+        <header>
+            <h1 class="text-center">Evan Kemp</h1>
+            <h2 class="text-center">Front End Engineer</h2>
+        </header>
     </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
