@@ -43,4 +43,24 @@ h2 {
     --logo-sze: 80px;
     height: var(--logo-sze);
     width: var(--logo-sze);
+    transition: width 200ms ease-in-out, height 200ms ease-in-out;
 }
+
+#logo:hover {
+    width: 75px;
+    height: 75px;
+}
+
+#menu-icon {
+    font-size: 2.5em;
+    color: black;
+    position: absolute;
+    right: 0;
+    transition: color 350ms ease-in-out;
+    cursor: pointer;
+}
+
+#menu-icon:hover {
+    color: var(--neon-green);
+}
+
