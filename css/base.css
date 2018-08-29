@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i');
 
 :root {
     --light-grey: #f1f1f1;
@@ -13,7 +13,7 @@ body {
 
 h1 {
     font-weight: 600;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0;
     padding: 0;
 }
@@ -21,6 +21,10 @@ h1 {
 h2 {
     font-weight: 400;
     font-size: 2rem;
+}
+
+q {
+    font-size: 2em;
 }
 
 .container {
@@ -56,7 +60,7 @@ h2 {
     color: black;
     position: absolute;
     right: 0;
-    transition: color 350ms ease-in-out;
+    transition: color 250ms ease-in-out;
     cursor: pointer;
 }
 

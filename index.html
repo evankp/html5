@@ -14,7 +14,22 @@
     <link rel="stylesheet" href="./css/base.css">
 
     <style>
+        #intro {
+            height: 60%;
+            padding-top: 50px;
+        }
 
+        #profile-picture {
+            width: 170px;
+        }
+
+        h2 {
+            font-weight: 300;
+        }
+
+        .section-break {
+            width: 200px;
+        }
     </style>
 
 </head>
@@ -24,13 +39,32 @@
             <hr class="header-lines mr-5">
             <a href="index.html"><img id="logo" src="./img/personal_logo.svg" alt="ek logo"></a>
             <hr class="header-lines ml-5">
-            <i id="menu-icon" class="fas fa-bars mr-5" ></i>
+            <span id="menu-icon" class="fas fa-bars mr-5" ></span>
         </nav>
 
-        <header>
-            <h1 class="text-center">Evan Kemp</h1>
-            <h2 class="text-center">Front End Engineer</h2>
+        <header id="intro" class="d-flex flex-column align-items-center">
+            <h1 class="text-center mb-3">Front End Engineer & Web Designer & Code Lover</h1>
+            <h2 style="margin-bottom: 50px">I build responsively</h2>
+            <img id="profile-picture" src="./img/profile-square.jpg" class="rounded-circle">
         </header>
+
+        <div class="d-flex flex-column align-items-center" style="height: 40%">
+            <img class="section-break" src="./img/code-solid.svg">
+        </div>
+
+        <section class="d-flex flex-column align-items-center">
+            <article class="text-center w-50 mb-5">
+                <p>
+                    I enjoy building websites with HTML, CSS, JavaScript (ES5/ES6), Vue.js.
+                build pages and use Python and MySQL to connect user interfaces to backend systems.
+                I am also passionate about home automation with smart devices.
+                </p>
+            </article>
+
+            <aside>
+                <q>I love to design elements that help improve the daily life of others.</q>
+            </aside>
+        </section>
     </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
