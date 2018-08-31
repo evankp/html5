@@ -28,9 +28,9 @@ q {
 }
 
 .container {
-    padding: 20px;
+    padding: 40px;
     background-color: white;
-    height: 100vh;
+    min-height: 1200px;
     position: relative;
 }
 
@@ -66,5 +66,9 @@ q {
 
 #menu-icon:hover {
     color: var(--neon-green);
+}
+
+#main-nav {
+    margin-bottom: 100px;
 }
 

@@ -15,8 +15,11 @@
 
     <style>
         #intro {
-            height: 60%;
-            padding-top: 50px;
+            margin-bottom: 150px;
+        }
+
+        #about {
+            margin-bottom: 80px;
         }
 
         #profile-picture {
@@ -27,43 +30,120 @@
             font-weight: 300;
         }
 
+        .heading-subtitle {
+            margin-bottom: 50px;
+        }
+
         .section-break {
+            height: 400px;
+        }
+
+        .section-break img {
             width: 200px;
         }
+
+        .skill-section {
+            background-color: #f1f1f1;
+            border: 1px solid #e0e0e0;
+            display: flex;
+            padding: 20px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .skill-section:first-of-type {
+            --border-radius: 5px 0 0 5px;
+            -webkit-border-radius: var(--border-radius);
+            -moz-border-radius: var(--border-radius);
+            border-radius: var(--border-radius);
+        }
+
+        .skill-section:last-of-type {
+            --border-radius: 0 5px 5px 0;
+            -webkit-border-radius: var(--border-radius);
+            -moz-border-radius: var(--border-radius);
+            border-radius: var(--border-radius);
+        }
+
+        /*.skill-section h4 {*/
+            /*color: var(--neon-green)*/
+        /*}*/
     </style>
 
 </head>
 <body>
     <div class="container">
-        <nav class="d-flex flex-row align-items-center mb-5">
+        <nav id="main-nav" class="d-flex flex-row align-items-center">
             <hr class="header-lines mr-5">
             <a href="index.html"><img id="logo" src="./img/personal_logo.svg" alt="ek logo"></a>
             <hr class="header-lines ml-5">
-            <span id="menu-icon" class="fas fa-bars mr-5" ></span>
+            <span id="menu-icon" class="fas fa-bars"></span>
         </nav>
 
         <header id="intro" class="d-flex flex-column align-items-center">
             <h1 class="text-center mb-3">Front End Engineer & Web Designer & Code Lover</h1>
-            <h2 style="margin-bottom: 50px">I build responsively</h2>
+            <h2 class="heading-subtitle">I build responsively</h2>
             <img id="profile-picture" src="./img/profile-square.jpg" class="rounded-circle">
         </header>
 
-        <div class="d-flex flex-column align-items-center" style="height: 40%">
-            <img class="section-break" src="./img/code-solid.svg">
+        <div class="section-break d-flex flex-column align-items-center">
+            <img src="./img/code-solid.svg">
         </div>
 
-        <section class="d-flex flex-column align-items-center">
+        <section id="about" class="d-flex flex-column align-items-center">
+            <header>
+                <h3>About Me</h3>
+            </header>
             <article class="text-center w-50 mb-5">
                 <p>
                     I enjoy building websites with HTML, CSS, JavaScript (ES5/ES6), Vue.js.
-                build pages and use Python and MySQL to connect user interfaces to backend systems.
-                I am also passionate about home automation with smart devices.
+                I also use Python and MySQL to connect user interfaces to backend systems.
+                At the same time I am passionate about home automation with smart devices.
                 </p>
             </article>
 
             <aside>
                 <q>I love to design elements that help improve the daily life of others.</q>
             </aside>
+        </section>
+
+        <section>
+            <header>
+                <h3 class="text-center mb-4">My Skills</h3>
+            </header>
+
+            <article class="row">
+                <section class="skill-section col-lg-4">
+                    <h4>Design</h4>
+                    <ul>
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                        <li>Prototyping Tools</li>
+                        <li>Graphic Design background</li>
+                    </ul>
+                </section>
+
+                <section class="skill-section col-lg-4">
+                    <h4>Frontend</h4>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Javascript</li>
+                        <li>Vue.js</li>
+                        <li>React</li>
+                    </ul>
+                </section>
+
+                <section class="skill-section col-lg-4">
+                    <h4>Backend</h4>
+                    <ul>
+                        <li>Python</li>
+                        <li>MySQL</li>
+                        <li>SQLAlchemy</li>
+                        <li>Jinja</li>
+                    </ul>
+                </section>
+            </article>
         </section>
     </div>
 
