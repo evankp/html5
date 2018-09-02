@@ -15,7 +15,7 @@
 
     <style>
         #intro {
-            margin-bottom: 150px;
+            margin-bottom: 100px;
         }
 
         #about {
@@ -23,7 +23,7 @@
         }
 
         #profile-picture {
-            width: 170px;
+            width: 15em;
         }
 
         h2 {
@@ -43,12 +43,18 @@
         }
 
         .skill-section {
-            background-color: #f1f1f1;
+            background-color: white;
             border: 1px solid #e0e0e0;
             display: flex;
             padding: 20px;
             flex-direction: column;
             align-items: center;
+        }
+
+        #section-columns {
+            -webkit-box-shadow: var(--box-shadow);
+            -moz-box-shadow: var(--box-shadow);
+            box-shadow: var(--box-shadow);
         }
 
         .skill-section:first-of-type {
@@ -112,7 +118,7 @@
                 <h3 class="text-center mb-4">My Skills</h3>
             </header>
 
-            <article class="row">
+            <article id="section-columns" class="row">
                 <section class="skill-section col-lg-4">
                     <h4>Design</h4>
                     <ul>
@@ -146,6 +152,12 @@
             </article>
         </section>
     </div>
+
+    <footer id="page-footer">
+        <div id="footer-container row">
+            <span class="col-6">&copy;2018 Evan Kemp</span>
+        </div>
+    </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>

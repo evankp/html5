@@ -3,10 +3,12 @@
 :root {
     --light-grey: #f1f1f1;
     --neon-green: #81D742;
+
+    --box-shadow: 0px 0px 39px -5px rgba(0,0,0,0.1);
 }
 
 body {
-    font-size: 14px;
+    font-size: 1vw;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
 }
@@ -20,17 +22,19 @@ h1 {
 
 h2 {
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 q {
-    font-size: 2em;
+    font-size: 1.3rem;
+}
+
+p, li {
+    font-size: 1rem;
 }
 
 .container {
     padding: 40px;
-    background-color: white;
-    min-height: 1200px;
     position: relative;
 }
 
@@ -70,5 +74,15 @@ q {
 
 #main-nav {
     margin-bottom: 100px;
+}
+
+#page-footer {
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 20px 21%;
+}
+
+#footer-container {
+    width: 60%;
 }
 
