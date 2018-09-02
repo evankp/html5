@@ -1,0 +1,89 @@
+@import "variables";
+@import "mixins";
+
+  #intro {
+    margin-bottom: 50px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 100px;
+    }
+  }
+
+  #about {
+    margin-bottom: 80px;
+
+    @media screen and (min-width: 768px) {
+      p {
+        width: 50%;
+      }
+    }
+  }
+
+  #profile-picture {
+    width: 100px;
+
+    @media screen and (min-width: 768px) {
+      width: 180px;
+    }
+  }
+
+  h2 {
+    font-weight: 300;
+  }
+
+  .heading-subtitle {
+    margin-bottom: 50px;
+  }
+
+  .section-break {
+    height: 120px;
+
+    img {
+      width: 120px;
+    }
+
+    @media screen and (min-width: 768px) {
+      height: 400px;
+
+      img {
+        width: 200px;
+      }
+    }
+  }
+
+  .skill-section {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+
+    ul {
+      align-self: start;
+    }
+
+    &:first-of-type {
+      --border-radius: 5px 0 0 5px;
+      -webkit-border-radius: var(--border-radius);
+      -moz-border-radius: var(--border-radius);
+      border-radius: var(--border-radius);
+    }
+
+    &:last-of-type {
+      --border-radius: 0 5px 5px 0;
+      -webkit-border-radius: var(--border-radius);
+      -moz-border-radius: var(--border-radius);
+      border-radius: var(--border-radius);
+    }
+
+    @include media-breakpoint-up(md) {
+      flex-direction: column;
+    }
+  }
+
+  #section-columns {
+    -webkit-box-shadow: $box-shadow;
+    -moz-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
+  }

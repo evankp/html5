@@ -6,22 +6,107 @@
     <!--[if lt IE 9]>
     <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv.js"></script>
     <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"
+    <link rel="icon" type="image/svg" href="./img/personal_logo.svg">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/index.css">
+
 </head>
 <body>
-    <div id="header-bar">
-        <header>
-            <h1>Evan Kemp</h1>
-            <h2>Frontend Engineer</h2>
+    <div class="container">
+        <nav id="main-nav" class="d-flex flex-row justify-content-start align-items-center">
+            <a href="index.html" class="flex-grow-1"><img id="logo" src="./img/personal_logo.svg" alt="ek logo"></a>
+            <span id="menu-icon" class="fas fa-bars"></span>
+        </nav>
+
+        <header id="intro" class="d-flex flex-column align-items-center">
+            <h1 class="text-center mb-3">Front End Engineer & Web Designer & Code Lover</h1>
+            <h2 class="heading-subtitle">I build responsively</h2>
+            <img id="profile-picture" src="./img/profile-square.jpg" class="rounded-circle">
         </header>
-        <nav>
+
+        <div class="section-break d-flex flex-column align-items-center">
+            <img src="./img/code-solid.svg">
+        </div>
+
+        <section id="about" class="d-flex flex-column align-items-center">
+            <header>
+                <h3>About Me</h3>
+            </header>
+            <article class="d-flex flex-column align-items-center mb-5">
+                <p class="text-center">
+                    I enjoy building websites with HTML, CSS, JavaScript (ES5/ES6), Vue.js.
+                I also use Python and MySQL to connect user interfaces to backend systems.
+                At the same time I am passionate about home automation with smart devices.
+                </p>
+            </article>
+
+            <aside>
+                <q>I love to design elements that help improve the daily life of others.</q>
+            </aside>
+        </section>
+
+        <section>
+            <header>
+                <h3 class="text-center mb-4">My Skills</h3>
+            </header>
+
+            <article id="section-columns" class="row">
+                <section class="skill-section col-lg-4">
+                    <h4>Design</h4>
+                    <ul>
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                        <li>Prototyping Tools</li>
+                        <li>Graphic Design background</li>
+                    </ul>
+                </section>
+
+                <section class="skill-section col-lg-4">
+                    <h4>Frontend</h4>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Javascript</li>
+                        <li>Vue.js</li>
+                        <li>React</li>
+                    </ul>
+                </section>
+
+                <section class="skill-section col-lg-4">
+                    <h4>Backend</h4>
+                    <ul>
+                        <li>Python</li>
+                        <li>MySQL</li>
+                        <li>SQLAlchemy</li>
+                        <li>Jinja</li>
+                    </ul>
+                </section>
+            </article>
+        </section>
+    </div>
+
+    <footer id="page-footer">
+        <span>&copy;2018 Evan Kemp</span>
+        <nav class="d-flex flex-row justify-content-center">
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Github</li>
-                <li>Contact</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="work.html">Portfolio</a></li>
+                <li><a href="http://www.evankemp.com">Other Works</a></li>
             </ul>
         </nav>
-    </div>
+    </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="./bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
