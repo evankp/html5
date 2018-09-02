@@ -1,53 +1,77 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i');
 
+@import "mixins";
 @import "variables";
 @import "tag_formatting";
 
 .container {
-    padding: 40px;
-    position: relative;
+  padding: 40px;
+  position: relative;
 }
 
 .header-lines {
-    width: 20%;
-    height: 3px;
-    color: $light-grey;
-    background-color: $light-grey;
-    border: none;
+  width: 20%;
+  height: 3px;
+  color: $light-grey;
+  background-color: $light-grey;
+  border: none;
 
 }
 
 #logo {
-    --logo-sze: 80px;
-    height: var(--logo-sze);
-    width: var(--logo-sze);
-    transition: width 200ms ease-in-out, height 200ms ease-in-out;
+  $logo-size: 40px;
+  height: $logo-size;
+  width: $logo-size;
+  transition: width 200ms ease-in-out, height 200ms ease-in-out;
 
-    &:hover {
-      width: 75px;
-    height: 75px;
-    }
+  &:hover {
+    $logo-hover-size: 35px;
+    width: $logo-hover-size;
+    height: $logo-hover-size;
+  }
 }
 
 #menu-icon {
-    font-size: 2em;
-    color: black;
-    position: absolute;
-    right: 0;
-    transition: color 250ms ease-in-out;
-    cursor: pointer;
+  font-size: 2em;
+  color: black;
+  transition: color 250ms ease-in-out;
+  cursor: pointer;
 
-    &:hover {
-      color: $neon-green;
-    }
+  &:hover {
+    color: $neon-green;
+  }
 }
 
 #main-nav {
+  margin-bottom: 50px;
+
+  @include media-breakpoint-up(md) {
     margin-bottom: 100px;
+  }
 }
 
 #page-footer {
-    width: 100%;
-    background-color: #f1f1f1;
-    padding: 20px 21%;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 20px 21%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  span {
+    margin-bottom: 10px;
+  }
+
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+    justify-content: start;
+
+    span {
+      flex-grow: 1;
+    }
+
+    nav {
+      flex-grow: 0;
+    }
+  }
 }
