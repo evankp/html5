@@ -1,0 +1,58 @@
+@import "variables";
+
+  #intro {
+    margin-bottom: 100px;
+  }
+
+  #about {
+    margin-bottom: 80px;
+  }
+
+  #profile-picture {
+    width: 180px;
+  }
+
+  h2 {
+    font-weight: 300;
+  }
+
+  .heading-subtitle {
+    margin-bottom: 50px;
+  }
+
+  .section-break {
+    height: 400px;
+
+    img {
+      width: 200px;
+    }
+  }
+
+  .skill-section {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+
+    &:first-of-type {
+      --border-radius: 5px 0 0 5px;
+      -webkit-border-radius: var(--border-radius);
+      -moz-border-radius: var(--border-radius);
+      border-radius: var(--border-radius);
+    }
+
+    &:last-of-type {
+      --border-radius: 0 5px 5px 0;
+      -webkit-border-radius: var(--border-radius);
+      -moz-border-radius: var(--border-radius);
+      border-radius: var(--border-radius);
+    }
+  }
+
+  #section-columns {
+    -webkit-box-shadow: $box-shadow;
+    -moz-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
+  }
