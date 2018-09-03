@@ -31,79 +31,37 @@
                     <li><a href="work.html">Portfolio</a></li>
                 </ul>
             </nav>
-
         </header>
-
-        <section id="intro">
-            <h1 class="text-center mb-3">Front End Engineer & Web Designer & Code Lover</h1>
-            <h2 class="heading-subtitle">I build responsively</h2>
-
-            <figure>
-                <img id="profile-picture" src="./dist/img/profile-square.jpg" alt="profile-picture" class="rounded-circle">
-                <figcaption>Me on a good day...</figcaption>
-            </figure>
-        </section>
-
-        <div class="section-break d-flex flex-column align-items-center">
-            <img src="./dist/img/code-solid.svg" alt="code icon">
-        </div>
-
-        <section id="about" class="d-flex flex-column align-items-center" role="main">
-            <header>
-                <h3>About Me</h3>
-            </header>
-            <article class="d-flex flex-column align-items-center mb-5">
-                <h4>Statement</h4>
-                <p class="text-center">
-                    I enjoy building websites with HTML, CSS, JavaScript (ES5/ES6), Vue.js.
-                I also use Python and MySQL to connect user interfaces to backend systems.
-                    At the same time I am passionate about <mark>home automation</mark> with smart devices.
-                </p>
+        
+        <section>
+            <article>
+                <h1>Contact Me</h1>
+                <p>Thank you for your interest in contacting me. You can reach me by filling out the form below or clicking on the social media buttons</p>
             </article>
 
-            <aside role="complementary">
-                <q>I love to design elements that help improve the daily life of others.</q>
-            </aside>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Alex Hamil" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="hamil@gmail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone" placeholder="(408) 555-5555">
+                </div>
+
+                <div class="form-group">
+                    <label for="priority">Priority</label>
+                    <input type="number" id="priority" name="priority" placeholder="0" min="0" max="3">
+                </div>
+            </form>
         </section>
-
-        <section role="main">
-            <header>
-                    <h3 class="text-center mb-4">My Skills</h3>
-            </header>
-
-            <div id="section-columns" class="row">
-                <article class="skill-section col-lg-4">
-                    <h4>Design</h4>
-                    <ul>
-                        <li>Photoshop</li>
-                        <li>Illustrator</li>
-                        <li>Prototyping Tools</li>
-                        <li>Graphic Design background</li>
-                    </ul>
-                </article>
-
-                <article class="skill-section col-lg-4">
-                    <h4>Frontend</h4>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>Javascript</li>
-                        <li>Vue.js</li>
-                        <li>React</li>
-                    </ul>
-                </article>
-
-                <article class="skill-section col-lg-4">
-                    <h4>Backend</h4>
-                    <ul>
-                        <li>Python</li>
-                        <li>MySQL</li>
-                        <li>SQLAlchemy</li>
-                        <li>Jinja</li>
-                    </ul>
-                </article>
-            </div>
-        </section>
+        
     </div>
 
     <footer id="page-footer" role="contentinfo">
@@ -123,6 +81,7 @@
             </ul>
         </nav>
     </footer>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>

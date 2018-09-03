@@ -1,0 +1,22 @@
+@import "variables";
+@import "mixins";
+
+input {
+  border-bottom: 1px solid $darker-grey;
+  outline: none;
+
+  &:focus {
+    border-color: $neon-green;
+  }
+
+  &::placeholder {
+    color: $light-grey;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
+  width: 140px;
+}
