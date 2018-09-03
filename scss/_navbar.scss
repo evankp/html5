@@ -7,6 +7,19 @@ $border-radius: (
     "large": 10px
 );
 
+header[role="banner"] nav {
+  $base-margin: 50px;
+  margin-bottom: $base-margin;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: ($base-margin * 2);
+  }
+}
+
 #nav-links {
   // Positioning
   position: absolute;
