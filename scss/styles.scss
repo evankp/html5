@@ -3,6 +3,7 @@
 @import "mixins";
 @import "variables";
 @import "tag_formatting";
+@import "navbar";
 
 .container {
   padding: 40px;
@@ -23,6 +24,7 @@
   height: $logo-size;
   width: $logo-size;
   transition: width 200ms ease-in-out, height 200ms ease-in-out;
+  flex-grow: 1;
 
   &:hover {
     $logo-hover-size: 35px;
@@ -44,6 +46,10 @@
 
 #main-nav {
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
 
   @include media-breakpoint-up(md) {
     margin-bottom: 100px;

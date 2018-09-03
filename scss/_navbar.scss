@@ -1,0 +1,25 @@
+@import "variables";
+@import "mixins";
+
+$border-radius: (
+    "small": 2px,
+    "medium": 5px,
+    "large": 10px
+);
+
+#nav-links {
+  // Positioning
+  position: absolute;
+  right: 0;
+  top: 100px;
+
+  //display
+  display: none;
+  padding: 20px 5%;
+  width: 20%;
+
+  //Styling
+  background-color: $off-white;
+  border: 2px solid $light-grey;
+  border-radius: map-get($border-radius, 'medium');
+}

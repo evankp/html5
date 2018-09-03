@@ -44,6 +44,18 @@ a:hover {
   color: #81D742;
 }
 
+#nav-links {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  display: none;
+  padding: 20px 5%;
+  width: 20%;
+  background-color: #fbfbfb;
+  border: 2px solid #f1f1f1;
+  border-radius: 5px;
+}
+
 .container {
   padding: 40px;
   position: relative;
@@ -61,6 +73,7 @@ a:hover {
   height: 40px;
   width: 40px;
   transition: width 200ms ease-in-out, height 200ms ease-in-out;
+  flex-grow: 1;
 }
 
 #logo:hover {
@@ -81,6 +94,10 @@ a:hover {
 
 #main-nav {
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
