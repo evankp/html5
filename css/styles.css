@@ -60,6 +60,20 @@ figure figcaption {
   text-align: center;
 }
 
+header[role="banner"] nav {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  header[role="banner"] nav {
+    margin-bottom: 100px;
+  }
+}
+
 #nav-links {
   position: absolute;
   right: 0;
@@ -97,6 +111,19 @@ figure figcaption {
   height: 35px;
 }
 
+#intro {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  #intro {
+    margin-bottom: 100px;
+  }
+}
+
 #menu-icon {
   font-size: 2em;
   color: black;
@@ -106,20 +133,6 @@ figure figcaption {
 
 #menu-icon:hover {
   color: #81D742;
-}
-
-#main-nav {
-  margin-bottom: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-}
-
-@media (min-width: 768px) {
-  #main-nav {
-    margin-bottom: 100px;
-  }
 }
 
 #page-footer {

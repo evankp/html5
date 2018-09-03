@@ -33,6 +33,17 @@
   }
 }
 
+
+#intro {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include media-breakpoint-up(md){
+      margin-bottom: 100px;
+    }
+}
+
 #menu-icon {
   font-size: 2em;
   color: black;
@@ -41,18 +52,6 @@
 
   &:hover {
     color: $neon-green;
-  }
-}
-
-#main-nav {
-  margin-bottom: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-
-  @include media-breakpoint-up(md) {
-    margin-bottom: 100px;
   }
 }
 
