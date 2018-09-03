@@ -44,6 +44,22 @@ a:hover {
   color: #81D742;
 }
 
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+figure img {
+  margin-bottom: 10px;
+}
+
+figure figcaption {
+  font-weight: 200;
+  font-size: 0.8em;
+  text-align: center;
+}
+
 #nav-links {
   position: absolute;
   right: 0;

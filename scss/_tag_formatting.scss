@@ -46,3 +46,19 @@ a {
     color: $neon-green;
   }
 }
+
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  img {
+    margin-bottom: 10px
+  }
+
+  figcaption {
+    font-weight: 200;
+    font-size: 0.8em;
+    text-align: center;
+  }
+}
