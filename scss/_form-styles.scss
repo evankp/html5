@@ -1,12 +1,12 @@
 @import "variables";
 @import "mixins";
 
-input {
+input, textarea {
   border-bottom: 1px solid $darker-grey;
   outline: none;
 
   &:focus {
-    border-color: $neon-green;
+    border-bottom: 2px solid $neon-green
   }
 
   &::placeholder {
@@ -14,9 +14,41 @@ input {
   }
 }
 
+#contact-intro {
+  margin-bottom: 100px;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
   justify-items: start;
   width: 140px;
+  margin: 0 20px 50px 0;
+
+  &.website {
+    width: 200px;
+  }
+
+  &.number {
+    width: 50px;
+  }
+
+  &.date {
+    width: 160px
+  }
+
+  &.textarea {
+    width: 100%
+  }
+}
+
+#contact-form {
+
+
+}
+
+.form-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
 }

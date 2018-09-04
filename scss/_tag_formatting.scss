@@ -63,6 +63,10 @@ figure {
   }
 }
 
-input {
+input, textarea {
   border: none;
+}
+
+textarea {
+  resize: none;
 }
