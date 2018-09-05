@@ -1,6 +1,7 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var browserSync = require('browser-sync').create();
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const browserSync = require('browser-sync').create();
+const imageOpt = require('gulp-imagemin')
 
 // Compile SCSS
 gulp.task('css:compile', function() {
@@ -11,8 +12,14 @@ gulp.task('css:compile', function() {
     .pipe(gulp.dest('./css'))
 });
 
+gulp.task('optimizeImg', () => {
+    return gulp.src('img/*')
+        .pipe(imageOpt())
+        .pipe(gulp.dest('dist/img'))
+})
+
 // Default task
-gulp.task('default', ['css:compile']);
+gulp.task('default', ['css:compile', 'optimizeImg']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {

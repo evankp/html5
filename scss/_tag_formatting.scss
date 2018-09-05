@@ -62,3 +62,11 @@ figure {
     text-align: center;
   }
 }
+
+input, textarea {
+  border: none;
+}
+
+textarea {
+  resize: none;
+}

@@ -1,0 +1,86 @@
+@import "variables";
+@import "mixins";
+
+input, textarea {
+  border-bottom: 1px solid $darker-grey;
+  outline: none;
+
+  &:focus {
+    border-bottom: 2px solid $neon-green
+  }
+
+  &::placeholder {
+    color: $light-grey;
+  }
+
+}
+
+input {
+
+  &[type="submit"] {
+    border: none;
+    border-radius: 5px;
+    background-color: $neon-green;
+    color: white;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($neon-green, 10%);
+    }
+  }
+
+  &[type="reset"] {
+    border: 1px solid $light-grey;
+    border-radius: 5px;
+    background: none;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $light-grey;
+      color: red;
+    }
+  }
+}
+
+#contact-intro {
+  margin-bottom: 100px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
+  width: 140px;
+  margin: 0 20px 50px 0;
+
+  &.website {
+    width: 200px;
+  }
+
+  &.number {
+    width: 50px;
+  }
+
+  &.date {
+    width: 160px
+  }
+
+  &.textarea {
+    width: 100%
+  }
+}
+
+#contact-form {
+
+
+}
+
+.form-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
