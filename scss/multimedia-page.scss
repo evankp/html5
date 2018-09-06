@@ -1,0 +1,6 @@
+@import "variables";
+@import "components";
+
+.play-btn {
+  @include button('secondary', 'positive')
+}

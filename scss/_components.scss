@@ -1,0 +1,49 @@
+@import "variables";
+
+@mixin button($type, $style: null) {
+  @if $type == 'primary' {
+    border: none;
+    border-radius: 5px;
+    background-color: $neon-green;
+    color: white;
+    width: 100px;
+    height: 40px;
+
+    &:hover {
+      background-color: darken($neon-green, 10%);
+    }
+
+  } @else if $type == 'secondary' {
+    @if $style == 'positve' {
+      border: 1px solid deepskyblue;
+    } @else if $style == 'negative' {
+      border: 1px solid red;
+    } @else if $style == 'negative' {
+      border: 1px solid $light-grey;
+    }
+    border-radius: 5px;
+    background: none;
+    width: 100px;
+    height: 40px;
+
+    &:hover {
+      background-color: $light-grey;
+
+      @if $style == 'negative' {
+        color: red;
+      } @else if $style == 'positive' {
+        color: deepskyblue;
+      }
+
+    }
+  }
+
+}
+%button {
+
+
+  &:hover {
+      background-color: $light-grey;
+      color: red;
+    }
+}
