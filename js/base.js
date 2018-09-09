@@ -17,4 +17,15 @@
             $navLinks.slideUp(slideSpeed)
         }
     })
+
+    $('.play-btn').on('click', function() {
+        const video = $(this).parent().parent()[0].firstElementChild
+        var $videobtn = $(this).attr('data-video-btn')
+
+        if ( $videobtn === 'play') {
+            video.play()
+        } else if ($videobtn === 'pause') {
+            video.pause()
+        }
+    })
 })(jQuery)

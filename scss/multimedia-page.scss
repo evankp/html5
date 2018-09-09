@@ -2,5 +2,9 @@
 @import "components";
 
 .play-btn {
-  @include button('secondary', 'positive')
+  @include button('secondary', 'positive');
+
+  &:first-of-type {
+    margin-right: 20px;
+  }
 }

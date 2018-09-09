@@ -38,15 +38,20 @@
             <h1>Video and Audio experimentation</h1>
             <section>
                 <h2>Various multimedia components</h2>
-                <video width="250" height="250" controls poster="/multimedia/rose-poster.jpg">
-                    <source src="multimedia/roseWall.mp4" type="video/mp4">
-                </video>
-
-                <div>
-                    <video width="250" height="250">
+                <div class="d-flex flex-row">
+                    <video width="250" height="250" controls poster="/multimedia/rose-poster.jpg" style="margin-right: 20px">
                         <source src="multimedia/roseWall.mp4" type="video/mp4">
                     </video>
-                    <button class="play-btn">Play</button>
+
+                    <div id="video-2" class="d-flex flex-column">
+                        <video width="250" height="250">
+                            <source src="multimedia/roseWall.mp4" type="video/mp4">
+                        </video>
+                        <div class="d-flex flex-row">
+                            <button class="play-btn" data-video-btn="play">Play</button>
+                            <button class="play-btn" data-video-btn="pause">Pause</button>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
