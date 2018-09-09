@@ -19,13 +19,34 @@
     })
 
     $('.play-btn').on('click', function() {
-        const video = $(this).parent().parent()[0].firstElementChild
-        var $videobtn = $(this).attr('data-video-btn')
+        const media = $(this).parent().parent()[0].firstElementChild
+        var $mediabtn = $(this).attr('data-media-btn')
 
-        if ( $videobtn === 'play') {
-            video.play()
-        } else if ($videobtn === 'pause') {
-            video.pause()
+        const MINVOLUME = 0.05
+        const MAXVOLUME = 1
+        const ADJUSTBY = 0.05
+
+        if ( $mediabtn === 'play') {
+            media.play()
+        } else if ($mediabtn === 'pause') {
+            media.pause()
+        } else if ($mediabtn === 'volume-up') {
+            if (media.volume < MAXVOLUME) {
+                media.volume += ADJUSTBY
+                console.log('Increased')
+            }
+        } else if ($mediabtn === 'volume-down') {
+            if (media.volume >= MINVOLUME) {
+                media.volume -= ADJUSTBY
+                console.log('Decreased')
+            }
         }
     })
+
+    var date = new Date(),
+        expireDate = new Date('September 28 2018 09:00:00')
+
+    if (date >= expireDate) {
+        $('#audio-element').remove()
+    }
 })(jQuery)

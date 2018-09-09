@@ -1,12 +1,12 @@
 @import "variables";
 
-@mixin button($type, $style: null) {
+@mixin button($type, $style: null, $width: 100px) {
   @if $type == 'primary' {
     border: none;
     border-radius: 5px;
     background-color: $neon-green;
     color: white;
-    width: 100px;
+    width: $width;
     height: 40px;
 
     &:hover {
@@ -23,7 +23,7 @@
     }
     border-radius: 5px;
     background: none;
-    width: 100px;
+    width: $width;
     height: 40px;
 
     &:hover {

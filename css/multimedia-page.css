@@ -1,8 +1,9 @@
 .play-btn {
   border-radius: 5px;
   background: none;
-  width: 100px;
+  width: 130px;
   height: 40px;
+  margin-bottom: 20px;
 }
 
 .play-btn:hover {
