@@ -122,7 +122,6 @@ input[type="submit"]:hover {
 }
 
 input[type="reset"] {
-  border: 1px solid #f1f1f1;
   border-radius: 5px;
   background: none;
   width: 100px;
@@ -132,7 +131,6 @@ input[type="reset"] {
 
 input[type="reset"]:hover {
   background-color: #f1f1f1;
-  color: red;
 }
 
 #contact-intro {

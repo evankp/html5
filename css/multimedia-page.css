@@ -1,0 +1,16 @@
+.play-btn {
+  border-radius: 5px;
+  background: none;
+  width: 130px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.play-btn:hover {
+  background-color: #f1f1f1;
+  color: deepskyblue;
+}
+
+.play-btn:first-of-type {
+  margin-right: 20px;
+}
