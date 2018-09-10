@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Evan Kemp</title>
+    <!--[if lt IE 9]>
+    <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Evan Kemp portfolio for frontend engineer. Vue.js, Pyhon, MySQL, ES6, CSS, Javascript, HTML5">
+
+    <link rel="icon" type="image/svg" href="./dist/img/personal_logo.svg">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/multimedia-page.css">
+
+</head>
+<body>
+    <div class="container">
+        <header role="banner">
+            <nav role="navigation">
+                <a href="index.html" class="flex-grow-1"><img id="logo" src="./dist/img/personal_logo.svg" alt="ek logo"></a>
+                <span id="menu-icon" class="fas fa-bars"></span>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="work.html">Portfolio</a></li>
+                    <li><a href="video-audio.html">Audio/video playground</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <h1>Video and Audio experimentation</h1>
+            <section>
+                <h2>Various multimedia components</h2>
+                <div class="d-flex flex-row">
+                    <video width="250" height="250" controls poster="./multimedia/rose-poster.jpg" style="margin-right: 20px">
+                        <source src="https://www.evankemp.com/video/RoseWall.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="d-flex flex-column" style="margin-right: 20px;">
+                        <video width="250" height="250">
+                            <source src="https://www.evankemp.com/video/RoseWall.mp4" type="video/mp4">
+                        </video>
+                        <div class="d-flex flex-row">
+                            <a class="play-btn" data-media-btn="play">Play</a>
+                            <a class="play-btn" data-media-btn="pause">Pause</a>
+                        </div>
+                    </div>
+
+                    <div id="audio-element" class="d-flex flex-column" style="width: 300px;">
+                        <audio style="margin-bottom: 20px" controls>
+                            <source src="./multimedia/Cabrobro.mp3" type="audio/mp3">
+                        </audio>
+                        <div class="d-flex flex-row flex-wrap">
+                            <a class="play-btn" data-media-btn="play">Play</a>
+                            <a class="play-btn" data-media-btn="pause">Pause</a>
+                            <a class="play-btn" data-media-btn="volume-down" style="margin-right: 20px;">Volume down</a>
+                            <a class="play-btn" data-media-btn="volume-up">Volume up</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+    </div>
+
+    <footer id="page-footer" role="contentinfo">
+        <span>
+            &copy;2018 Evan Kemp <br>
+            Updated: <time datetime="2018-09-09 04:44:00">9/9/2018 4:44PM</time>
+        </span>
+        <nav class="d-flex flex-row justify-content-center" role="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="work.html">Portfolio</a></li>
+                <li><a href="http://www.evankemp.com">Other Works</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="./bootstrap/js/bootstrap.min.js"></script>
+<script src="./js/base.js"></script>
+</body>
+</html>

@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "components";
 
 input, textarea {
   border-bottom: 1px solid $darker-grey;
@@ -18,31 +19,14 @@ input, textarea {
 input {
 
   &[type="submit"] {
-    border: none;
-    border-radius: 5px;
-    background-color: $neon-green;
-    color: white;
-    width: 100px;
-    height: 40px;
+    @include button('primary', null, 100px);
     cursor: pointer;
-
-    &:hover {
-      background-color: darken($neon-green, 10%);
-    }
   }
 
   &[type="reset"] {
-    border: 1px solid $light-grey;
-    border-radius: 5px;
-    background: none;
-    width: 100px;
-    height: 40px;
+    @include button('secondary', 'neutral', 100px);
     cursor: pointer;
 
-    &:hover {
-      background-color: $light-grey;
-      color: red;
-    }
   }
 }
 
