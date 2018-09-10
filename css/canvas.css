@@ -1,27 +1,30 @@
-.play-btn {
+#toggle-animation-canvas {
   text-decoration: none;
   padding: 6px;
   cursor: pointer;
   border-radius: 5px;
   background: none;
-  width: 130px;
+  width: 100px;
   height: 40px;
   border: 1px solid #d5d7df;
   text-align: center;
   color: #000 !important;
-  margin-bottom: 20px;
 }
 
-.play-btn:hover {
+#toggle-animation-canvas:hover {
   background-color: #f1f1f1;
   color: deepskyblue !important;
 }
 
-.play-btn:hover {
+#toggle-animation-canvas:hover {
   background-color: #f1f1f1;
   color: red;
 }
 
-.play-btn:first-of-type {
-  margin-right: 20px;
+#basic-canvas.hide {
+  display: none;
+}
+
+#animation-canvas.hide {
+  display: none;
 }

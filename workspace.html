@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/canvas.css">
 
 </head>
 <body>
@@ -33,15 +34,50 @@
             </nav>
 
         </header>
-        <section>
+
+        <a id="toggle-animation-canvas">Toggle animation canvas</a>
+
+        <section id="basic-canvas" class="hide" style="margin-top: 20px">
             <header>
                 <h1>Canvas Drawings</h1>
             </header>
 
             <article>
-                <h2>Rectangle</h2>
+                <h3>Rectangle</h3>
                 <canvas id="rectangle"></canvas>
             </article>
+
+            <article>
+                <h3>Triangle</h3>
+                <canvas id="triangle"></canvas>
+            </article>
+
+            <article>
+                <h3>Circle</h3>
+                <canvas id="circle"></canvas>
+            </article>
+
+            <article>
+                <h3>Text</h3>
+                <canvas id="text"></canvas>
+            </article>
+
+            <article>
+                <h3>Image</h3>
+                <canvas id="image"></canvas>
+            </article>
+        </section>
+
+        <section id="animation-canvas" style="margin-top: 20px;">
+            <header>
+                <h1>Animation</h1>
+            </header>
+
+            <article>
+                <h3>Animation canvas</h3>
+                <canvas id="animation" style="border: 1px solid black"></canvas>
+            </article>
+
         </section>
 
     </div>
