@@ -19,12 +19,12 @@ input, textarea {
 input {
 
   &[type="submit"] {
-    @include button('primary', null);
+    @include button('primary', null, 100px);
     cursor: pointer;
   }
 
   &[type="reset"] {
-    @include button('secondary', 'neutral');
+    @include button('secondary', 'neutral', 100px);
     cursor: pointer;
 
   }
