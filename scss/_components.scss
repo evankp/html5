@@ -3,6 +3,7 @@
 @mixin button($type, $style: null, $width: 100px) {
   text-decoration: none;
   padding: 6px;
+  cursor: pointer;
   @if $type == 'primary' {
     border: none;
     border-radius: 5px;
@@ -20,7 +21,7 @@
       border: 1px solid deepskyblue;
     } @else if $style == 'negative' {
       border: 1px solid red;
-    } @else if $style == 'negative' {
+    } @else if $style == 'neutral' {
       border: 1px solid $darker-grey;
     }
     border-radius: 5px;

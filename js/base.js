@@ -49,4 +49,13 @@
     if (date >= expireDate) {
         $('#audio-element').remove()
     }
+
+    $('#animation-canvas').addClass('hide')
+
+    $('#toggle-animation-canvas').on("click", function (event) {
+        event.preventDefault()
+        $('#basic-canvas').toggleClass('hide')
+        $('#animation-canvas').toggleClass('hide')
+
+    })
 })(jQuery)

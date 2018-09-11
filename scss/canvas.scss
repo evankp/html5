@@ -1,0 +1,15 @@
+@import "variables";
+@import "mixins";
+@import "components";
+
+#toggle-animation-canvas {
+  @include button('secondary', 'positive');
+}
+
+#basic-canvas.hide {
+  display: none;
+}
+
+#animation-canvas.hide {
+  display: none;
+}

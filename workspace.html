@@ -7,15 +7,16 @@
     <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv.js"></script>
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Evan Kemp portfolio for frontend engineer. Vue.js, Pyhon, MySQL, ES6, CSS, Javascript, HTML5">
+    <meta name="description" content="HTML5 Portfolio class for HTML5 class">
 
     <link rel="icon" type="image/svg" href="./dist/img/personal_logo.svg">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/multimedia-page.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/canvas.css">
 
 </head>
 <body>
@@ -28,52 +29,63 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="workspace.html">Portfolio</a></li>
-                    <li><a href="video-audio.html">Audio/video playground</a></li>
+                    <li><a href="workspace.html">Workspace</a></li>
                 </ul>
             </nav>
+
         </header>
-        
-        <main>
-            <h1>Video and Audio experimentation</h1>
-            <section>
-                <h2>Various multimedia components</h2>
-                <div class="d-flex flex-row">
-                    <video width="250" height="250" controls poster="./multimedia/rose-poster.jpg" style="margin-right: 20px">
-                        <source src="https://www.evankemp.com/video/RoseWall.mp4" type="video/mp4">
-                    </video>
 
-                    <div class="d-flex flex-column" style="margin-right: 20px;">
-                        <video width="250" height="250">
-                            <source src="https://www.evankemp.com/video/RoseWall.mp4" type="video/mp4">
-                        </video>
-                        <div class="d-flex flex-row">
-                            <a class="play-btn" data-media-btn="play">Play</a>
-                            <a class="play-btn" data-media-btn="pause">Pause</a>
-                        </div>
-                    </div>
+        <a id="toggle-animation-canvas">Toggle animation canvas</a>
 
-                    <div id="audio-element" class="d-flex flex-column" style="width: 300px;">
-                        <audio style="margin-bottom: 20px" controls>
-                            <source src="./multimedia/Cabrobro.mp3" type="audio/mp3">
-                        </audio>
-                        <div class="d-flex flex-row flex-wrap">
-                            <a class="play-btn" data-media-btn="play">Play</a>
-                            <a class="play-btn" data-media-btn="pause">Pause</a>
-                            <a class="play-btn" data-media-btn="volume-down" style="margin-right: 20px;">Volume down</a>
-                            <a class="play-btn" data-media-btn="volume-up">Volume up</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        
+        <section id="basic-canvas" style="margin-top: 20px">
+            <header>
+                <h1>Canvas Drawings</h1>
+            </header>
+
+            <article>
+                <h3>Rectangle</h3>
+                <canvas id="rectangle"></canvas>
+            </article>
+
+            <article>
+                <h3>Triangle</h3>
+                <canvas id="triangle"></canvas>
+            </article>
+
+            <article>
+                <h3>Circle</h3>
+                <canvas id="circle"></canvas>
+            </article>
+
+            <article>
+                <h3>Text</h3>
+                <canvas id="text"></canvas>
+            </article>
+
+            <article>
+                <h3>Image</h3>
+                <canvas id="image"></canvas>
+            </article>
+        </section>
+
+        <section id="animation-canvas" class="hide" style="margin-top: 20px;">
+            <header>
+                <h1>Animation</h1>
+            </header>
+
+            <article>
+                <h3>Animation canvas</h3>
+                <canvas id="animation" style="border: 1px solid black"></canvas>
+            </article>
+
+        </section>
+
     </div>
 
     <footer id="page-footer" role="contentinfo">
         <span>
             &copy;2018 Evan Kemp <br>
-            Updated: <time datetime="2018-09-09 04:44:00">9/9/2018 4:44PM</time>
+            Updated: <time datetime="2018-09-03 11:00:00.000">9/3/2018 11:00AM</time>
         </span>
         <nav class="d-flex flex-row justify-content-center" role="navigation">
             <ul>
@@ -88,10 +100,10 @@
         </nav>
     </footer>
 
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="./bootstrap/js/bootstrap.min.js"></script>
 <script src="./js/base.js"></script>
+<script src="./js/canvas.js"></script>
 </body>
 </html>

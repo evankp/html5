@@ -110,6 +110,7 @@ input::placeholder, textarea::placeholder {
 input[type="submit"] {
   text-decoration: none;
   padding: 6px;
+  cursor: pointer;
   border: none;
   border-radius: 5px;
   background-color: #81D742;
@@ -131,6 +132,8 @@ input[type="submit"]:hover {
 input[type="reset"] {
   text-decoration: none;
   padding: 6px;
+  cursor: pointer;
+  border: 1px solid #d5d7df;
   border-radius: 5px;
   background: none;
   width: 100px;
