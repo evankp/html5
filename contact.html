@@ -18,8 +18,7 @@
     <link rel="stylesheet" href="./css/index.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./js/geolocate.js" async></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv_4GQj8Kh8KrJahI-i_QQsyPJTDxXOVo&callback=initMap" async></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv_4GQj8Kh8KrJahI-i_QQsyPJTDxXOVo&sensor=false" async></script>
 
 </head>
 <body>
@@ -93,7 +92,7 @@
                 <input type="reset" id="contact-reset" value="Reset">
             </form>
 
-            <div id="map"></div>
+            <div id="contact-map" class="map"></div>
         </main>
         
     </div>
@@ -119,5 +118,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="./bootstrap/js/bootstrap.min.js"></script>
 <script src="./js/base.js"></script>
+<script src="/js/maps.js"></script>
 </body>
 </html>

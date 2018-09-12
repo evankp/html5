@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/canvas.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./js/geolocate.js" async></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv_4GQj8Kh8KrJahI-i_QQsyPJTDxXOVo&sensor=false" async></script>
 
 </head>
 <body>
@@ -44,13 +44,19 @@
 
                 <article>
                     <h2>Latitude & Longitude</h2>
-                    <p>Latitude: <span id="lat"></span></p>
-                    <p>Longitude: <span id="long"></span></p>
+                    <p>Latitude: <span id="lat">Loading...</span></p>
+                    <p>Longitude: <span id="long">Loading...</span></p>
                 </article>
 
                 <article>
                     <h2>Distance to my office</h2>
                     <p>About <span id="distance">0</span> kms away</p>
+                    <p>Accuracy: <span id="accuracy">Loading...</span> meters</p>
+                </article>
+
+                <article>
+                    <h2>Track yourself</h2>
+                    <div id="track-map" class="map"></div>
                 </article>
             </header>
         </section>
@@ -78,5 +84,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="./bootstrap/js/bootstrap.min.js"></script>
 <script src="./js/base.js"></script>
+<script src="./js/geolocate.js"></script>
 </body>
 </html>
