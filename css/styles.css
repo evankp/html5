@@ -262,3 +262,9 @@ input[type="reset"]:hover {
     flex-grow: 0;
   }
 }
+
+.map {
+  width: 600px;
+  height: 300px;
+  border: 1px solid black;
+}

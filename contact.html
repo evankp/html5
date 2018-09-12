@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/index.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv_4GQj8Kh8KrJahI-i_QQsyPJTDxXOVo&sensor=false" async></script>
+
 </head>
 <body>
     <div class="container">
@@ -30,18 +33,19 @@
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="work.html">Portfolio</a></li>
                     <li><a href="video-audio.html">Audio/video playground</a></li>
+                    <li><a href="geolocation.html">Geolocate</a></li>
                 </ul>
             </nav>
         </header>
         
-        <section>
+        <main>
             <h1>Contact Me</h1>
             <article id="contact-intro">
                 <h2>Fill out the form to proceed</h2>
                 <p>Thank you for your interest in contacting me. You can reach me by filling out the form below or clicking on the social media buttons</p>
             </article>
 
-            <form id="contact-form" autocomplete="on">
+            <form id="contact-form" autocomplete="on" style="margin-bottom: 20px;">
                 <div class="form-section">
                     <div class="form-group">
                         <label for="name">Name</label>
@@ -87,7 +91,9 @@
                 <input type="submit" id="contact-submit" value="Submit">
                 <input type="reset" id="contact-reset" value="Reset">
             </form>
-        </section>
+
+            <div id="contact-map" class="map"></div>
+        </main>
         
     </div>
 
@@ -109,10 +115,9 @@
         </nav>
     </footer>
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="./bootstrap/js/bootstrap.min.js"></script>
 <script src="./js/base.js"></script>
+<script src="/js/maps.js"></script>
 </body>
 </html>

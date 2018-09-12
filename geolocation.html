@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/canvas.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv_4GQj8Kh8KrJahI-i_QQsyPJTDxXOVo&sensor=false" async></script>
+
 </head>
 <body>
     <div class="container">
@@ -30,57 +33,32 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="workspace.html">Workspace</a></li>
-                    <li><a href="video-audio.html.html">Video/Audio playground</a></li>
-                    <li><a href="geolocation.html">Geolocate</a></li>
                 </ul>
             </nav>
 
         </header>
 
-        <a id="toggle-animation-canvas">Toggle animation canvas</a>
-
-        <section id="basic-canvas" style="margin-top: 20px">
+        <section>
             <header>
-                <h1>Canvas Drawings</h1>
-                <h2>Various shapes & an animation</h2>
+                <h1>Geolocation services</h1>
+
+                <article>
+                    <h2>Latitude & Longitude</h2>
+                    <p>Latitude: <span id="lat">Loading...</span></p>
+                    <p>Longitude: <span id="long">Loading...</span></p>
+                </article>
+
+                <article>
+                    <h2>Distance to my office</h2>
+                    <p>About <span id="distance">0</span> kms away</p>
+                    <p>Accuracy: <span id="accuracy">Loading...</span> meters</p>
+                </article>
+
+                <article>
+                    <h2>Track yourself</h2>
+                    <div id="track-map" class="map"></div>
+                </article>
             </header>
-
-            <article>
-                <h3>Rectangle</h3>
-                <canvas id="rectangle"></canvas>
-            </article>
-
-            <article>
-                <h3>Triangle</h3>
-                <canvas id="triangle"></canvas>
-            </article>
-
-            <article>
-                <h3>Circle</h3>
-                <canvas id="circle"></canvas>
-            </article>
-
-            <article>
-                <h3>Text</h3>
-                <canvas id="text"></canvas>
-            </article>
-
-            <article>
-                <h3>Image</h3>
-                <canvas id="image"></canvas>
-            </article>
-        </section>
-
-        <section id="animation-canvas" class="hide" style="margin-top: 20px;">
-            <header>
-                <h1>Animation</h1>
-            </header>
-
-            <article>
-                <h3>Animation canvas</h3>
-                <canvas id="animation" style="border: 1px solid black"></canvas>
-            </article>
-
         </section>
 
     </div>
@@ -103,10 +81,9 @@
         </nav>
     </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="./bootstrap/js/bootstrap.min.js"></script>
 <script src="./js/base.js"></script>
-<script src="./js/canvas.js"></script>
+<script src="./js/geolocate.js"></script>
 </body>
 </html>
