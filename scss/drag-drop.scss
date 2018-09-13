@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i');
+
+@import "mixins";
+@import "variables";
+@import "tag_formatting";
+@import "navbar";
+@import "form-styles";
+@import "components";
+
+#drag-boards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.drag-board {
+  border: 1px solid black;
+  --square-box: 599px;
+  width: var(--square-box);
+  height: var(--square-box);
+
+  &:first-of-type {
+    margin-right: 20px;
+  }
+}
+
+
+.drag-piece {
+  --square-size: 200px;
+  width: var(--square-size);
+  height: var(--square-size);
+  background-color: var(--bg-color);
+  border: 1px solid black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 3em;
+  color: white;
+}
+
+.drag-placeholder {
+  --square-size: 200px;
+  width: var(--square-size);
+  height: var(--square-size);
+  border: 1px solid black;
+}
+
+.drag-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
