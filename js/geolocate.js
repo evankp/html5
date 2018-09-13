@@ -67,29 +67,24 @@ $(function () {
 
     } else {
         alert('Geolocation features are, unfortunately not supported on your browser')
-        window.location.href = "/"
     }
 
     function errorAlert(e) {
         switch (e.code) {
                 case 1:
                     alert('Location permission denied')
-                    window.location.href = '/'
                     break
 
                 case 2:
                     alert('Your location is not available')
-                    window.location.href = '/'
                     break
 
                 case 3:
                     alert('Location request timed out')
-                    window.location.href = '/'
                     break
 
                 default:
                     alert('Unknown error')
-                    window.location.href = '/'
             }
     }
 })
